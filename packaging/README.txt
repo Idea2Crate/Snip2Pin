@@ -31,5 +31,5 @@ Default shortcut: macOS Command+Shift+2; Windows/Linux X11 Ctrl+Shift+2.
 Settings: shortcut, theme, icons and opt-in login startup (off by default).
 
 源码与完整说明 / Source and documentation:
-https://github.com/Snip2Pin/Snip2Pin
+https://github.com/Idea2Crate/Snip2Pin
 License: MIT. See LICENSE and THIRD_PARTY_NOTICES.txt in this package.

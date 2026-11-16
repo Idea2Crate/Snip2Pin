@@ -1,7 +1,8 @@
 # Contributing to Snip2Pin
 
 Keep the product focused on screenshot + pin. Read [AGENTS.md](AGENTS.md) for
-implementation constraints and [the workflow](docs/workflow.md) for development,
+shared rules, [project instructions](docs/project.md) for implementation constraints
+and [the workflow](docs/workflow.md) for development,
 validation, packaging and manual releases.
 
 1. Describe the problem and acceptance criteria; use an Issue for larger changes.
@@ -130,5 +131,5 @@ pre-commit integration instead of replacing existing hooks.
 Use Conventional Commits for PR titles and every commit subject:
 `type(scope)!: description` (scope and `!` optional, maximum 100 characters).
 For example, `fix(pin): keep controls visible` or `docs: 精简使用说明`.
-Allowed types and body guidance are in AGENTS.md; the required `messages` workflow
+Allowed types and body guidance are in [development rules](docs/development-rules.md); the required `messages` workflow
 enforces the format. Squash merges use the PR title/body.

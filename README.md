@@ -1,6 +1,6 @@
 # Snip2Pin · 截图置顶
 
-[![CI](https://img.shields.io/github/actions/workflow/status/Snip2Pin/Snip2Pin/ci.yml?branch=main&label=CI)](https://github.com/Snip2Pin/Snip2Pin/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/github/license/Snip2Pin/Snip2Pin)](LICENSE) [![Rust 1.95+](https://img.shields.io/badge/Rust-1.95%2B-b7410e?logo=rust)](Cargo.toml) [![Platforms](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-2563eb)](#安装)
+[![CI](https://img.shields.io/github/actions/workflow/status/Idea2Crate/Snip2Pin/ci.yml?branch=main&label=CI)](https://github.com/Idea2Crate/Snip2Pin/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/github/license/Idea2Crate/Snip2Pin)](LICENSE) [![Rust 1.95+](https://img.shields.io/badge/Rust-1.95%2B-b7410e?logo=rust)](Cargo.toml) [![Platforms](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-2563eb)](#安装)
 
 <p>
   <img src="assets/icons/line.svg" width="64" alt="极简线条图标 / Line icon" />
@@ -13,7 +13,7 @@
 
 A small Rust app that keeps screenshots above other windows.
 
-[在线体验 / Try the demo](https://snip2pin.github.io/Snip2Pin/) · [简体中文](#简体中文) · [English](#english) · [安装](#安装) · [使用](#使用)
+[在线体验 / Try the demo](https://idea2crate.github.io/Snip2Pin/) · [简体中文](#简体中文) · [English](#english) · [安装](#安装) · [使用](#使用)
 
 左右滚动查看场景，点击图片可放大。 / Scroll sideways for more scenes; click an image to enlarge.
 
@@ -47,7 +47,7 @@ A small Rust app that keeps screenshots above other windows.
 
 ### 安装
 
-从 [GitHub Releases](https://github.com/Snip2Pin/Snip2Pin/releases) 下载对应系统的安装包。
+从 [GitHub Releases](https://github.com/Idea2Crate/Snip2Pin/releases) 下载对应系统的安装包。
 
 | 系统 | 安装方式 |
 | --- | --- |
@@ -91,7 +91,7 @@ macOS 首次截图需允许屏幕录制权限，按应用中的提示操作即�
 
 语言、主题和图标默认跟随系统，可在主页手动选择；开机自启默认关闭。菜单栏／托盘与 macOS Dock 也提供截图和主页入口。
 
-主页及菜单中的「帮助」可打开 [Wiki 使用指南](https://github.com/Snip2Pin/Snip2Pin/wiki)。
+主页及菜单中的「帮助」可打开 [Wiki 使用指南](https://github.com/Idea2Crate/Snip2Pin/wiki)。
 
 截图和贴图保存在内存中，不上传，也不保留历史记录。剪贴板由系统管理。Linux 部分截图后端会使用临时文件，读取后清理。
 
@@ -112,7 +112,7 @@ macOS 首次截图需允许屏幕录制权限，按应用中的提示操作即�
 
 ### Install
 
-Download the package for your system from [GitHub Releases](https://github.com/Snip2Pin/Snip2Pin/releases).
+Download the package for your system from [GitHub Releases](https://github.com/Idea2Crate/Snip2Pin/releases).
 
 | System | Installation |
 | --- | --- |
@@ -156,7 +156,7 @@ With a pin focused, use arrows for fine movement. Holding an arrow key gradually
 
 Language, theme and icon follow the system with manual overrides on Home. Login startup is off by default. The menu bar / tray and macOS Dock also offer Capture and Home.
 
-Choose **Help** on Home or in the menu to open the [Wiki guide](https://github.com/Snip2Pin/Snip2Pin/wiki).
+Choose **Help** on Home or in the menu to open the [Wiki guide](https://github.com/Idea2Crate/Snip2Pin/wiki).
 
 Images stay in memory; there is no upload or capture history. The OS manages the clipboard. Some Linux capture backends use temporary files, removed after reading.
 
@@ -180,7 +180,7 @@ Images stay in memory; there is no upload or capture history. The OS manages the
 Install Rust, Git LFS and the [native build dependencies](CONTRIBUTING.md#local-builds) first. The development toolchain is pinned in `rust-toolchain.toml`.
 
 ```sh
-git clone https://github.com/Snip2Pin/Snip2Pin.git
+git clone https://github.com/Idea2Crate/Snip2Pin.git
 cd Snip2Pin
 git lfs install --local
 git lfs pull

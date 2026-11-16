@@ -162,7 +162,7 @@ pkgver={version}
 pkgrel=1
 pkgdesc='Capture a region and keep it floating on screen'
 arch=('x86_64')
-url='https://github.com/Snip2Pin/Snip2Pin'
+url='https://github.com/Idea2Crate/Snip2Pin'
 license=('MIT')
 depends=('glibc' 'gcc-libs' 'libxcb' 'libx11' 'libxcursor' 'libxi' 'libxrandr' 'dbus' 'fontconfig' 'libxkbcommon' 'libxkbcommon-x11' 'wayland' 'libglvnd' 'mesa')
 optdepends=('xdg-desktop-portal: screen capture under Wayland; install a portal backend for your desktop'
@@ -237,7 +237,7 @@ mod tests {
     fn arch_recipe_binds_version_url_and_checksum_without_install_hooks() {
         let recipe = aur_build(
             "0.2.0",
-            "https://github.com/Snip2Pin/Snip2Pin/releases/download/v0.2.0/package.tar.gz",
+            "https://github.com/Idea2Crate/Snip2Pin/releases/download/v0.2.0/package.tar.gz",
             &"a".repeat(64),
         );
         assert!(recipe.contains("pkgver=0.2.0"));
