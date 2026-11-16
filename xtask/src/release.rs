@@ -4,7 +4,7 @@ use serde_json::Value;
 use std::path::Path;
 use std::process::Command;
 
-const REPOSITORY: &str = "Snip2Pin/Snip2Pin";
+const REPOSITORY: &str = "Idea2Crate/Snip2Pin";
 const CI_RUNS_PER_PAGE: usize = 100;
 
 const UNVERIFIED_NOTICE: &str = "## 未验证发布者 / Unverified publisher\n\n这些安装包没有受系统信任的发布者签名；macOS 包仅有 ad-hoc 完整性签名，未经 Apple 公证，Windows 包未签名。首次打开可能需要用户通过系统提供的选项手动允许；系统或组织策略可能禁止运行。macOS 更新可能需要重新授予截屏权限。\n\nThese packages have no trusted publisher signature. macOS bundles use an ad-hoc integrity seal and are not notarized by Apple; Windows executables are unsigned. Opening may require explicit approval using OS-provided controls and may be blocked by device policy. macOS updates may require screen capture permission again.";
@@ -354,7 +354,7 @@ pub fn aur_package(directory: &Path, destination: &Path) -> Result {
     let refs = output(Command::new("git").args([
         "ls-remote",
         "--tags",
-        "https://github.com/Snip2Pin/Snip2Pin.git",
+        "https://github.com/Idea2Crate/Snip2Pin.git",
         &format!("refs/tags/{tag}"),
         &format!("refs/tags/{tag}^{{}}"),
     ]))?;
@@ -607,7 +607,7 @@ mod tests {
 
     #[test]
     fn aur_requires_the_exact_public_stable_asset() {
-        let url = "https://github.com/Snip2Pin/Snip2Pin/releases/download/v0.2.0/linux.tar.gz";
+        let url = "https://github.com/Idea2Crate/Snip2Pin/releases/download/v0.2.0/linux.tar.gz";
         let release = serde_json::json!({ "tag_name": "v0.2.0", "draft": false,
             "prerelease": false, "assets": [{ "name": "linux.tar.gz", "browser_download_url": url }] });
         validate_public_asset(&release, "v0.2.0", "linux.tar.gz", url).expect("public asset");
