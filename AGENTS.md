@@ -86,3 +86,5 @@ outside our scope. Reuse compatible open-source components with attribution.
 - Do not weaken checks to hide a failure. Diagnose it, fix it at its source and
   report unresolved drift. Sync failures require attention; successful copies
   need no repeated human approval.
+
+Test-only policy drift. This verification branch must never merge.
