@@ -1,7 +1,7 @@
 # Contributing to Snip2Pin
 
 Keep the product focused on screenshot + pin. Read [AGENTS.md](AGENTS.md) for
-shared rules, [project instructions](docs/project.md) for implementation constraints
+contribution rules, [project instructions](docs/project.md) for implementation constraints
 and [the workflow](docs/workflow.md) for development,
 validation, packaging and manual releases.
 
@@ -12,8 +12,8 @@ validation, packaging and manual releases.
 4. Install the commit hooks described below. Run `cargo xtask check` before a PR.
 5. Open a PR with automatic results and explicit native interaction coverage.
    Tests use generated images, never private desktop or clipboard content.
-   Keep PR descriptions and comments focused on the problem, design, implementation,
-   fixes and necessary validation. Do not publish chat transcripts, personal details,
+   Keep PR bodies and progress comments to problem and fix lists. Put technical
+   review findings and validation evidence in review comments. Do not publish chat transcripts, personal details,
    approval conversations, local activity or internal coordination/model settings.
 6. Confirm the original symptom is gone before merging, in addition to passing
    required checks. Keep unverified fixes in a draft PR; visible native interaction

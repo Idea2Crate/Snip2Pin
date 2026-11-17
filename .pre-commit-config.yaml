@@ -16,8 +16,8 @@ repos:
     hooks:
       - id: credential-patterns
         name: Reject private keys and recognizable credential tokens
-        entry: python3 hooks/check-secrets.py
-        language: system
+        entry: python hooks/check-secrets.py
+        language: python
         types: [text]
       - id: rust-lint
         name: Rust format, Clippy and repository checks

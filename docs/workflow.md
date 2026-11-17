@@ -4,7 +4,7 @@ Snip2Pin 使用短分支、PR 和三平台检查，只有用户明确要求时�
 开发构建、未签名候选包和最终安装包分开管理。目前只计划通过 GitHub 分发安装包，
 不上 App Store，暂不开通付费签名服务。默认 `unverified`，不需要生产凭据；未来取得
 证书后可显式选择 `signed`，由受审批保护的 Actions 签名。本地开发身份只留在本机。
-项目采用 MIT 许可证。组织共同规范见 [AGENTS.md](../AGENTS.md)，产品范围和实现约束见 [项目说明](project.md)。
+项目采用 MIT 许可证。贡献规范见 [AGENTS.md](../AGENTS.md)，产品范围和实现约束见 [项目说明](project.md)。
 
 ## 日常开发
 

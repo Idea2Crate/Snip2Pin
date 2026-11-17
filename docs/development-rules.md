@@ -2,7 +2,7 @@
 
 ## Development
 
-Follow [docs/workflow.md](docs/workflow.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+Follow [the workflow](workflow.md) and [CONTRIBUTING.md](../CONTRIBUTING.md).
 Use short branches and focused PRs; `main` requires all native CI checks and
 dependency checks, resolved discussions, an up-to-date base, and squash merge.
 Do not bypass protections or push directly to `main`. Single-maintainer PRs do
