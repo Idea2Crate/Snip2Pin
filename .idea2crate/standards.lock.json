@@ -1,11 +1,12 @@
 {
   "files": {
-    ".agents/skills/maintain-standards/SKILL.md": "0599bf4bf2a85bbdfb63363511e9c5f62c7a9f34b3814d3188a516e7997dba56",
-    ".pre-commit-config.yaml": "6905436e2320277ac4a01a64a9c549682018233a1844558934f0bca36a8ed492",
-    "AGENTS.md": "2d072efbe2b7900956a1b743424574e508e889a7b9d39c84518903a5a5ba7cd9"
+    ".agents/skills/idea2crate-maintain-standards/SKILL.md": "9d363c0f9aa210dec2de730243dbe588dc3a99a8bf60ba59bc7d32d0edf2f32a",
+    ".idea2crate/LICENSE": "092820d449749c83422a408485165ed5ca00e1f8de641ee032a2d7ec84ddb605",
+    ".pre-commit-config.yaml": "b63ada7200add1dde60874c9746e9ce09165dddeb8cab2646755e8c3756a7ce3",
+    "AGENTS.md": "c4051de12ebd98ac9dfc3dc4954d2cdefe69a75b54a641eb4f5a71c23ffb63ed"
   },
   "repository": "Idea2Crate/Snip2Pin",
-  "revision": "f6a0604ac30281aa0063e7fdc52773d7bb5d520b",
-  "schema": 1,
+  "revision": "685780208de9644ee2dd4384038db979ab43c8d3",
+  "schema": 2,
   "source": "Idea2Crate/standards"
 }

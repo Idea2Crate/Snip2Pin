@@ -23,10 +23,13 @@ Desktop interaction tests require task authorization; use generated WASM data
 when desktop control is not authorized. Do not publish or install an application
 as part of a documentation or governance update.
 
-Root `AGENTS.md`, `.agents/skills`, `.pre-commit-config.yaml` and
-`.idea2crate/standards.lock.json` are managed by
+Root `AGENTS.md`, `.agents/skills/idea2crate-*`, `.pre-commit-config.yaml` and
+`.idea2crate` are managed by
 [Idea2Crate/standards](https://github.com/Idea2Crate/standards). Change universal
 rules there; project requirements belong in the documents above. Pre-commit keeps
 the existing Rust/xtask and dependency checks alongside common integrity and
 credential-pattern checks. The central GitHub App check is the authoritative
 managed-file gate; a target workflow cannot grant its own policy approval.
+Other skill names are project-owned. A central PR requires final human approval;
+approved routine syncs need no repeated approval. Bundle format changes use an
+explicitly reviewed migration, not runtime compatibility with old formats.
