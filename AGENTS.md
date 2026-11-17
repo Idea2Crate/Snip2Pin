@@ -31,15 +31,35 @@ outside our scope. Reuse compatible open-source components with attribution.
 - Use dedicated patch/edit tools for text changes. Use a programmatic rewrite
   only when the transformation itself requires parsing or computation; explain
   why and inspect its diff. Convenience or file count alone is not a reason.
-- Run the project's formatter, lint and relevant tests. Test observable behavior
-  and failure boundaries, not a copy of the implementation. Report what actually
-  ran, failures and material gaps; never claim an unperformed acceptance check.
+- Report the checks actually run, failures and material gaps; never claim an
+  unperformed acceptance check.
 - Use the project's pinned toolchain and dependency lockfiles. For Rust use
   rustfmt, Clippy and the documented Cargo checks. Other languages use their
   documented equivalents; shared rules do not mandate Rust for infrastructure.
 - Review the final diff for correctness, scope, stale code and documentation.
   Public descriptions explain the problem, behavior and validation, without
   private conversation, personal paths or internal coordination details.
+
+## Testing
+
+- Do not add unit tests for simple, reversible, low-impact changes, or tests that
+  merely restate the implementation.
+- Add unit tests only for important, error-prone behavior. Code complexity,
+  checkpoints or network requests alone do not justify adding tests.
+- Test observable behavior and failure boundaries, not a copy of the
+  implementation. Focus on inputs and outputs; avoid checking internal fields
+  one by one, implementation details or every conditional branch.
+- Prefer existing checks, targeted smoke tests and verification with real inputs
+  and outputs.
+- Temporary tools, one-off scripts and experimental helpers usually need no new
+  unit tests. Validate them by running them and fix issues found in actual use.
+- When changing related logic, simplify or remove redundant, obsolete or brittle
+  tests, including tests that repeat behavior already handled by shared libraries
+  or frameworks.
+- Run the project's formatter, lint and relevant tests. Keep tests appropriate
+  to the change and run the project's required checks. Once relevant checks
+  pass, broaden or repeat testing only for new changes, failures or unresolved
+  concerns.
 
 ## Git, checks and publication
 

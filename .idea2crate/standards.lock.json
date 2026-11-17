@@ -1,11 +1,11 @@
 {
   "files": {
     ".agents/skills/maintain-standards/SKILL.md": "0599bf4bf2a85bbdfb63363511e9c5f62c7a9f34b3814d3188a516e7997dba56",
-    ".pre-commit-config.yaml": "6c83de6c337b78791f493cd58847c3a879735343b376ef4001ceba8e13a0e434",
-    "AGENTS.md": "f84e3f079684618997e0a259a09ea6bd3e32fcaca4328510e0fb837854c9799c"
+    ".pre-commit-config.yaml": "6905436e2320277ac4a01a64a9c549682018233a1844558934f0bca36a8ed492",
+    "AGENTS.md": "2d072efbe2b7900956a1b743424574e508e889a7b9d39c84518903a5a5ba7cd9"
   },
   "repository": "Idea2Crate/Snip2Pin",
-  "revision": "376572bce7fd65d56f2b0798232da652b606cf29",
+  "revision": "f6a0604ac30281aa0063e7fdc52773d7bb5d520b",
   "schema": 1,
   "source": "Idea2Crate/standards"
 }
