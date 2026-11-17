@@ -12,3 +12,4 @@ dist/
 *.keychain-db
 password.bin
 preview/pkg/
+/.agents/skills/idea2crate-*/
