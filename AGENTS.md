@@ -1,4 +1,4 @@
-# Idea2Crate
+# Snip2Pin
 
 We turn ideas and real needs into working, verifiable software with agents.
 Projects have their own goals and designs; replicating an existing product is
@@ -8,10 +8,9 @@ outside our scope. Reuse compatible open-source components with attribution.
 
 - A human is accountable for contributions made with an agent, including their
   correctness, review responses, licensing and publication.
-- This file is identical in every enrolled repository. Its only editable source
-  is `Idea2Crate/standards`. Shared skills and pre-commit configuration are also
-  managed there. Propose changes centrally, never edit downstream copies or add
-  `AGENTS.override.md` or nested `AGENTS.md` files.
+- This repository owns its instructions, skills, hooks and CI. Change them here
+  through the project's normal review process. Reusable skills are optional
+  authoring aids, not sources that automatically replace project rules.
 - Before implementation, read `docs/project.md` for the project's purpose,
   architecture, commands and links to its detailed requirements. Project rules
   may supplement these rules, but cannot weaken them. If instructions conflict,
@@ -37,15 +36,20 @@ outside our scope. Reuse compatible open-source components with attribution.
   rustfmt, Clippy and the documented Cargo checks. Other languages use their
   documented equivalents; shared rules do not mandate Rust for infrastructure.
 - Review the final diff for correctness, scope, stale code and documentation.
-  Public descriptions explain the problem, behavior and validation, without
-  private conversation, personal paths or internal coordination details.
+- Keep PR titles short. PR bodies and PR progress comments contain only
+  problem and fix lists for contributors without internal context. Omit
+  conversations, debugging history and piles of implementation details. Put
+  technical review findings in comments on the corresponding PR. Repository
+  docs retain current usage, development commands, architecture and long-term
+  maintenance rules; keep personal paths and internal coordination out.
 
 ## Testing
 
 - Do not add unit tests for simple, reversible, low-impact changes, or tests that
   merely restate the implementation.
-- Add unit tests only for important, error-prone behavior. Code complexity,
-  checkpoints or network requests alone do not justify adding tests.
+- Add unit tests only for important, error-prone behavior. Implementation
+  complexity, file processing, configuration validation or GitHub requests alone
+  do not justify adding tests.
 - Test observable behavior and failure boundaries, not a copy of the
   implementation. Focus on inputs and outputs; avoid checking internal fields
   one by one, implementation details or every conditional branch.
@@ -64,8 +68,8 @@ outside our scope. Reuse compatible open-source components with attribution.
 ## Git, checks and publication
 
 - Protected branches change through pull requests. Do not push directly or
-  bypass required checks, hooks or branch protections. Central rule approval is
-  reused by verified downstream sync PRs, which may merge automatically.
+  bypass required checks, hooks or branch protections. Follow this repository's
+  review and merge requirements; changes here do not depend on central approval.
 - Use Conventional Commits: `type(scope): description`, with optional scope and
   `!` for breaking changes. Describe incompatible changes and migration in the
   body. Use short branches and focused PRs; link existing issues when relevant.
@@ -88,21 +92,19 @@ outside our scope. Reuse compatible open-source components with attribution.
 - Check dependencies' licenses and preserve required copyright and attribution.
   Pin workflow actions to full commit SHAs; use minimal permissions, finite
   timeouts and immutable source revisions for shared automation.
-- Treat untrusted contributions as data during policy validation. Never execute
-  a PR's scripts or workflows with central credentials. Do not trust a PR's
-  labels, author name or edited checksum as proof of authorization.
+- Keep secrets out of untrusted PR execution. This project's checks do not
+  require cross-repository write credentials or a central GitHub App.
 - Respect user data and system permissions. Tests use generated or disposable
   data and isolated destinations. Desktop interaction, real screenshots,
   clipboard writes, login items and installation require appropriate task
   authorization; simulated UI tests do not prove native platform behavior.
 
-## Maintaining shared rules
+## Optional repository setup skills
 
-- Propose universal changes in `Idea2Crate/standards`, with their purpose and
-  compatibility impact. Project-specific requirements remain in project docs.
-- Synchronization uses a merged central commit, exact file contents and a
-  separate lockfile. Only an authenticated sync PR with the expected payload
-  may change managed files downstream. New commits require fresh validation.
-- Do not weaken checks to hide a failure. Diagnose it, fix it at its source and
-  report unresolved drift. Sync failures require attention; successful copies
-  need no repeated human approval.
+- A human may explicitly invoke a repository setup skill to create or update
+  local guidance. Updating or installing a skill does not authorize rewriting
+  these instructions. Preserve product rules and working checks when adapting
+  a template, and discuss material conflicts with the user.
+- Central skills may be installed locally under `.agents/skills/idea2crate-*`
+  and ignored by Git. Project-owned skills with other names can be committed.
+  Do not overwrite local skill modifications without inspection.
